@@ -21,9 +21,10 @@ const trigger = async () => {
 };
 
 const setGameData = async () => { 
-  const response = await axios.get('https://raw.githubusercontent.com/OpenZeppelin/ethernaut/master/client/src/gamedata/gamedata.json')
+  const response = await axios.get('https://raw.githubusercontent.com/Disrup3/ethernaut/master/client/src/gamedata/gamedata.json')
   const gameData = response.data
   globalThis.gameData = gameData
+
 }
 
 trigger();

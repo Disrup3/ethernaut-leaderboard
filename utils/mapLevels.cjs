@@ -14,7 +14,7 @@ const createDifficultyMaps = async () => {
 };
 
 const getGameDataDeploy = async (network) => { 
-  const result = await fetch(`https://raw.githubusercontent.com/OpenZeppelin/ethernaut/master/client/src/gamedata/deploy.${network}.json`)
+  const result = await fetch(`https://raw.githubusercontent.com/Disrup3/ethernaut/master/client/src/gamedata/deploy.${network}.json`)
   const data = await result.json()
   return data;
 }
